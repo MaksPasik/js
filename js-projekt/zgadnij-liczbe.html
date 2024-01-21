@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zgadnij Liczbe</title>
+    <link rel="stylesheet" type="text/css" href="css/zgadnij-liczbe.css" />
+    
+  </head>
+  <body>
+    <div>
+      <h1>Zgadnij Liczbe</h1>
+      <p>Wybierz liczbe od 1 do 100.</p>
+      <input type="number" id="guess" min="1" max="100" />
+      <button id="submit">Potwierdź</button>
+      <button id="newGame" style="display: none;">Nowa Gra</button>
+      <p id="hint"></p>
+      <p id="attempts"></p>
+    </div>
+
+    <button class="backButton" onclick="goToHomePage()" title="Powrót do Strony Głównej">Powrót do Strony Głównej</button>
+    
+  </body>
+  <script src="js/gry/zgadnij-liczbe.js" defer></script>
+  <script src="js/script.js"></script>
+</html>

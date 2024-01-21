@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/love.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Tester</title>
+   
+</head>
+<body>
+    <h1>Love Tester</h1>
+    <form onsubmit="return calculateLove()">
+        <label for="maleSign">Znak zodiaku mężczyzny:</label>
+        <select id="maleSign" name="maleSign">
+            <option value="aries">Baran</option>
+            <option value="taurus">Byk</option>
+            <option value="gemini">Bliźnięta</option>
+            <option value="cancer">Rak</option>
+            <option value="leo">Lew</option>
+            <option value="virgo">Panna</option>
+            <option value="libra">Waga</option>
+            <option value="scorpio">Skorpion</option>
+            <option value="sagittarius">Strzelec</option>
+            <option value="capricorn">Koziorożec</option>
+            <option value="aquarius">Wodnik</option>
+            <option value="pisces">Ryby</option>
+        </select>
+
+        <label for="femaleSign">Znak zodiaku kobiety:</label>
+        <select id="femaleSign" name="femaleSign">
+            <option value="aries">Baran</option>
+            <option value="taurus">Byk</option>
+            <option value="gemini">Bliźnięta</option>
+            <option value="cancer">Rak</option>
+            <option value="leo">Lew</option>
+            <option value="virgo">Panna</option>
+            <option value="libra">Waga</option>
+            <option value="scorpio">Skorpion</option>
+            <option value="sagittarius">Strzelec</option>
+            <option value="capricorn">Koziorożec</option>
+            <option value="aquarius">Wodnik</option>
+            <option value="pisces">Ryby</option>
+        </select>
+
+        <button type="submit">Sprawdź zgodność</button>
+    </form>
+
+    <div id="result"></div>
+
+    <button class="backButton" onclick="goToHomePage()" title="Powrót do Strony Głównej">Powrót do Strony Głównej</button>
+
+    <script src="js/gry/lovetester.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuda.pl</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+  <h1>Nuda.pl</h1>
+  <p>Nudzisz się i nie chce ci się szukać co możesz porobić?</p>
+  <p>Pozwól nam wybrać dla ciebie coś do roboty</p>
+
+  <div id="loginForm">
+    <label for="username">Login:</label>
+    <input type="text" id="username">
+    <br>
+    <label for="password">Hasło:</label>
+    <input type="password" id="password">
+    <br>
+    <button onclick="login()">Logowanie</button>
+    <br>
+    <button onclick="toggleForms()">Rejestracja</button>
+  </div>
+
+  <div id="registrationForm" style="display: none;">
+    <label for="newUsername">Login:</label>
+    <input type="text" id="newUsername">
+    <br>
+    <label for="newPassword">Hasło:</label>
+    <input type="password" id="newPassword">
+    <br>
+    <button onclick="register()">Zarejestruj</button>
+    <br>
+    <button onclick="toggleForms()">Powrót do logowania</button>
+  </div>
+
+  <div id="loggedInButtons" style="display: none;">
+    <button id="button1" onclick="losowaStrona()" title="Przejdź do losowej strony.">Znajdź Aktywność Za Mnie</button>
+    <p>albo...</p>
+    <p>Skorzystaj z naszej apki i sam znajdź coś do roboty</p>
+    <button id="button2" onclick="wybor()" title="Przejdź do wyboru aplikacji.">Wybierz Aktywność</button>
+    <br>
+    <button onclick="logout()">Wyloguj</button>
+  </div>
+
+  <script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+canvas {
+  border: 2px solid #fff;
+}
+
+.backButton {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+cursor: pointer;
+background-color: grey;
+}
+
+.instructions {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}

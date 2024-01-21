@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja Pogodowa</title>
+    <link rel="stylesheet" type="text/css" href="css/pogoda.css" />
+
+</head>
+<body style="background-image: url('https://wallpaperset.com/w/full/6/5/d/51787.jpg');">
+    <div id="content-container">
+        <h1>Sprawdź Pogode</h1>
+        <p>i dowiedz się gdzie w odległej galaktyce panuje podobny klimat.</p>
+        <form>
+            <label for="location">Podaj lokalizację:</label>
+            <div id="button-container">
+                <input type="text" id="location" name="location" autocomplete="off" oninput="showSuggestions()" onfocus="showSuggestions()">
+                <div id="suggestions-container" class="autocomplete-suggestions"></div>
+                <button type="button" id="btn-get-weather" onclick="getWeatherByCity()">Pobierz pogodę na podstawie wpisanego miasta</button>
+                <button type="button" id="btn-get-location" onclick="getWeatherByLocation()">Pobierz pogodę na podstawie lokalizacji</button>
+            </div>
+        </form>
+
+        <div id="weather-info"></div>
+        <div id="planet-info"></div>
+        
+    </div>
+
+    <button class="backButton" onclick="goToHomePage()" title="Powrót do Strony Głównej">Powrót do Strony Głównej</button>
+
+<script src="js/pogoda.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

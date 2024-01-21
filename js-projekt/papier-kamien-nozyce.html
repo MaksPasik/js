@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Papier Kamień Nożyce</title>
+    <link rel="stylesheet" href="css/papier-kamien-nozyce.css">
+  </head>
+  <body>
+    <div>
+    <p class="title">Papier Kamień Nożyce</p>
+    <p>Wybierz swój ruch</p>
+
+    <button onclick="
+      playGame('rock');
+    " class="move-button">
+      <img src="img/rock-emoji.png" class="move-icon">
+    </button>
+
+    <button onclick="
+      playGame('paper');
+    " class="move-button">
+      <img src="img/paper-emoji.png" class="move-icon">
+    </button>
+
+    <button onclick="
+      playGame('scissors');
+    " class="move-button">
+      <img src="img/scissors-emoji.png" class="move-icon">
+    </button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    " class="reset-score-button">Reset</button>
+    </div>
+    
+    <button class="backButton" onclick="goToHomePage()" title="Powrót do Strony Głównej">Powrót do Strony Głównej</button>
+
+    <script src="js/gry/papier-kamien-nozyce.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
